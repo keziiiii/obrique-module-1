@@ -13,7 +13,7 @@ You need an invitation to metacrafters to do this project.
 ### Executing program
 
 * Watch the tutorial of metacrafters and go to remiix etherium
-Then Start coding
+then Start coding
 ```
 code blocks for commands
 ```
