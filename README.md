@@ -20,7 +20,7 @@ code blocks for commands
 
 ## Help
 
-You must have A laptop and strong internet.
+You must have a laptop and strong internet.
 ```
 command to run if program contains helper info
 ```
