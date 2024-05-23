@@ -20,13 +20,13 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 
    
 ```
-// SPDX-License-Identifier: MIT
+/ SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract MyContract {
-    address public kezi;  // Setting 'kezi' as the owner
+contract UpdatedContract {
+    address public owner; // Representing the owner of the contract
     mapping(address => uint) public balances;
-```
+
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "HelloWorld" contract from the dropdown menu, and then click on the "Deploy" button.
