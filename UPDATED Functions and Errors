@@ -20,7 +20,7 @@ contract UpdatedContract {
 
         balances[msg.sender] -= amount; // Subtracting the withdrawal amount from the sender's balance
 
-        bool success = payable(msg.sender).send(amount); // Sending the amount to the sender
+        (bool success, ) = payable(msg.sender).call{value: amount}(""); // Sending the amount to the sender
         require(success, "Transfer failed."); // Ensuring the transfer was successful
     }
 
