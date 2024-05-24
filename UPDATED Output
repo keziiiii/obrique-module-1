@@ -1,0 +1,14 @@
+status	0x1 Transaction mined and execution succeed
+transaction hash	0x0386ec2be80e62f15dc8c48c3913b6b9f166a3374816f3b310ac7cfaea970589
+block hash	0xc22310b781196a7f4453aa727f23919a48a531caf6b09863097525306afa0447
+block number	2
+contract address	0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8
+from	0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+to	UpdatedContract.(constructor)
+gas	699641 gas
+transaction cost	608383 gas 
+execution cost	517893 gas 
+input	0x608...90033
+decoded input	{}
+decoded output	 - 
+logs	[]
