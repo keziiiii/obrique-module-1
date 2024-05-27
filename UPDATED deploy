@@ -1,0 +1,23 @@
+
+[vm]from: 0x5B3...eddC4to: UpdatedContract.(constructor)value: 2 weidata: 0x608...90033logs: 0hash: 0x48a...314ef
+status	0x0 Transaction mined but execution failed
+transaction hash	0x48a3e3abdd0e6bee85707957ad51667d81ec56198772c763d2cb295ff94314ef
+block hash	0x19da1a54d37e27ee0bb81310849650bc6d774e985e16e274dc079ab73741ae12
+block number	1
+contract address	0xd9145CCE52D386f254917e481eB44e9943F39138
+from	0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+to	UpdatedContract.(constructor)
+gas	3000000 gas
+transaction cost	88702 gas 
+execution cost	44 gas 
+input	0x608...90033
+decoded input	{}
+decoded output	 - 
+logs	[]
+value	2 wei
+creation of UpdatedContract errored: Error occurred: revert.
+
+revert
+	The transaction has been reverted to the initial state.
+Note: The called function should be payable if you send value and the value you send should be less than your current balance.
+You may want to cautiously increase the gas limit if the transaction went out of gas.
