@@ -28,6 +28,33 @@ contract UpdatedContract {
 
     constructor() {
         owner = msg.sender; // Setting the contract deployer as the owner
+    }
+
+    function deposit() public payable {
+        require(msg.value > 0, "Deposit amount must be greater than 0"); // Ensuring the deposit amount is greater than 0
+        balances[msg.sender] += msg.value; // Adding the deposited amount to the sender's balance
+    }
+
+    function withdraw(uint amount) public {
+        require(amount > 0, "Withdrawal amount should be greater than 0"); // Ensuring the withdrawal amount is greater than 0
+        require(balances[msg.sender] >= amount, "Insufficient balance"); // Checking if the sender has enough balance
+
+        balances[msg.sender] -= amount; // Subtracting the withdrawal amount from the sender's balance
+
+        bool success = payable(msg.sender).send(amount); // Sending the amount to the sender
+        require(success, "Transfer failed."); // Ensuring the transfer was successful
+    }
+
+    function doubleValue(uint value) public pure returns (uint) {
+        uint result = value * 2; // Doubling the input value
+        return result;
+    }
+
+    function safeDivision(uint value) public pure returns (uint) {
+        require(value != 0, "Value cannot be 0"); // Requiring the input value to be non-zero
+        return 100 / value; // Returning the result of 100 divided by the input value
+    }
+}
 
 ```
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
